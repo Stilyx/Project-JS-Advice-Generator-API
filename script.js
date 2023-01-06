@@ -23,7 +23,8 @@ function pressButton() {
 async function getAdviceInfo() {
   const response = await fetch(url);
   const data = await response.json();
+  const {slip} = data;
 
-  adviceNumber.textContent = `ADVICE #${data.slip.id}`;
-  adviceText.textContent = data.slip.advice;
+  adviceNumber.textContent = `ADVICE #${slip.id}`;
+  adviceText.textContent = slip.advice;
 }
