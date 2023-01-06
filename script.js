@@ -5,7 +5,6 @@ const button = document.querySelector('.changeAdvice');
 const url = 'https://api.adviceslip.com/advice';
 
 getAdviceInfo();
-pressButton();
 
 function pressButton() {
   button.addEventListener('click', event => {
@@ -21,6 +20,7 @@ function pressButton() {
 }
 
 async function getAdviceInfo() {
+  pressButton();
   const response = await fetch(url);
   const data = await response.json();
   const {slip} = data;
