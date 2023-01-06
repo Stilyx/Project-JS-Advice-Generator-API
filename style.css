@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', 'sans-serif';
+  font-weight: 800;
+}
+
+body {
+  display: flex;
+  background-color: #202733;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  min-width: 343px;
+  height: 332px;
+  min-height: 315px;
+  margin: 20px;
+  background-color: #313a48;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.212);
+}
+
+.adviceContent {
+  color: #53ffaa;
+  font-size: 13px;
+  margin-top: 10px;
+  letter-spacing: 4px;
+}
+
+.adviceText {
+  display: flex;
+  width: 444px;
+  height: 200px;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #cee3e9;
+}
+
+.footerDesign {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.first-retangle {
+  width: 6px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #cee3e9;
+}
+
+.second-retangle {
+  width: 6px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #cee3e9;
+}
+
+.bar {
+  width: 200px;
+  height: 1px;
+  background-color: #4f5d74;
+}
+
+.changeAdvice {
+  background-color: #53ffaa;
+  border: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.changeAdvice:hover {
+  box-shadow: 0px 0px 40px #53ffaa;
+}
+
+.changeAdvice.ativo {
+  opacity: 0.25;
+  cursor: no-drop;
+}
+
+@media (max-width: 500px) {
+  .adviceText {
+    font-size: 24px;
+    width: 295px;
+    height: 132px;
+  }
+
+  .bar {
+    width: 120px;
+  }
+}
